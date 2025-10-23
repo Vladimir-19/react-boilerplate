@@ -46,3 +46,67 @@ Vite helps you quickly generate a boilerplate React app with an optimized config
 3. Lightning-fast dev server with hot module replacement (HMR)
 
 4. Modern tooling with minimal setup
+
+# Create Your Project
+
+Open your terminal and run one of the following:
+
+### Using npm
+
+`npm create vite@latest`
+
+###Follow the interactive prompts:
+
+1. Enter your project name (e.g. my-react-app)
+2. Select React as your framework
+3. Choose your variant: JavaScript or TypeScript
+
+### Or skip the prompts by running:
+
+`# npm`
+`npm create vite@latest my-react-app -- --template react`
+
+`# yarn`
+`yarn create vite my-react-app --template react`
+
+`# pnpm`
+`pnpm create vite my-react-app --template react`
+
+Once complete, you’ll:
+`cd my-react-app`
+`npm install`
+`npm run dev`
+
+## Project Structure
+
+<pre> ```plaintext 📁 my-react-app ├── 📁 public │ └── vite.svg ├── 📁 src │ ├── App.css │ ├── App.jsx │ ├── 📁 assets │ │ └── react.svg │ ├── index.css │ └── main.jsx ├── .gitignore ├── eslint.config.js ├── index.html ├── package-lock.json ├── package.json ├── README.md └── vite.config.js ``` </pre>
+
+## Key Directories
+
+/node_modules – Contains all dependencies (auto-generated; don’t edit).
+/public – Holds static assets like icons and logos.
+/src – Main source folder for your React code: - App.jsx – main app component - App.css – styles for the app - main.jsx – entry point (equivalent to index.jsx) - assets/ – for images and static assets
+
+💡 You can rename main.jsx → index.jsx if preferred, but update the import in index.html.
+
+## 🗂️ Key Files
+
+| File               | Description                                                   |
+| ------------------ | ------------------------------------------------------------- |
+| `index.html`       | Entry point HTML file. Vite injects compiled JavaScript here. |
+| `package.json`     | Lists dependencies, metadata, and npm scripts.                |
+| `vite.config.js`   | Configures Vite (React plugin, aliases, proxy, etc.).         |
+| `eslint.config.js` | Linting rules for consistent code style.                      |
+| `.gitignore`       | Specifies files/folders Git should ignore.                    |
+
+## 🚀 Important npm Scripts
+
+| Command           | Description                          |
+| ----------------- | ------------------------------------ |
+| `npm run dev`     | Starts the development server.       |
+| `npm run build`   | Builds a production-ready version.   |
+| `npm run preview` | Serves the production build locally. |
+
+# Making Your First Edit
+
+Open src/App.jsx and replace its contents with:
