@@ -80,25 +80,34 @@ Once complete, you’ll:
 ## Create a proper .gitignore
 
 1. Ensure that .gitignore includes following:
-   `# dependencies`
-   `node_modules/`
-   `` `# build output`
-`dist/`
-`.vite/` ``
-   `# environment variables`
-   `.env`
-   `.env.local`
-   `.env.*.local`
-   `` `# logs`
-`npm-debug.log*`
-`yarn-debug.log*`
-`yarn-error.log*` ``
-   `# IDE files`
-   `.vscode/`
-   `.idea/`
-   `.DS_Store`
+   
+  ## Recommended .gitignore
 
-2. Remove files that should have been ignored
+```gitignore
+# dependencies
+node_modules/
+
+# build output
+dist/
+.vite/
+
+# environment variables
+.env
+.env.local
+.env.*.local
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE files
+.vscode/
+.idea/
+.DS_Store
+
+
+3. Remove files that should have been ignored
    `git rm -r --cached .`
    `git add .`
    `git commit -m "Clean up repo and add .gitignore"`
