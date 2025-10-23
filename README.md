@@ -77,6 +77,35 @@ Once complete, you’ll:
 `npm install`
 `npm run dev`
 
+## Create a proper .gitignore
+
+1. Ensure that .gitignore includes following:
+   `# dependencies`
+   `node_modules/`
+   `` `# build output`
+`dist/`
+`.vite/` ``
+   `# environment variables`
+   `.env`
+   `.env.local`
+   `.env.*.local`
+   `` `# logs`
+`npm-debug.log*`
+`yarn-debug.log*`
+`yarn-error.log*` ``
+   `# IDE files`
+   `.vscode/`
+   `.idea/`
+   `.DS_Store`
+
+2. Remove files that should have been ignored
+   `git rm -r --cached .`
+   `git add .`
+   `git commit -m "Clean up repo and add .gitignore"`
+   `git push -f origin main`
+
+After this, your Source Control in VS Code should show only your project files — no 10k other files.
+
 ## Project Structure
 
 <pre> ```plaintext 📁 my-react-app ├── 📁 public │ └── vite.svg ├── 📁 src │ ├── App.css │ ├── App.jsx │ ├── 📁 assets │ │ └── react.svg │ ├── index.css │ └── main.jsx ├── .gitignore ├── eslint.config.js ├── index.html ├── package-lock.json ├── package.json ├── README.md └── vite.config.js ``` </pre>
