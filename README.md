@@ -30,8 +30,10 @@ Vite requires:
 ### Update npm
 
 Even if you just installed Node, it’s a good idea to update npm:
-`# macOS / Linux`
-`sudo npm install -g npm@latest`
+```
+# macOS / Linux
+sudo npm install -g npm@latest
+```
 
 ## Setting Up Your React App with Vite
 
@@ -53,7 +55,7 @@ Open your terminal and run one of the following:
 
 ### Using npm
 
-`npm create vite@latest`
+```npm create vite@latest```
 
 ###Follow the interactive prompts:
 
@@ -62,20 +64,23 @@ Open your terminal and run one of the following:
 3. Choose your variant: JavaScript or TypeScript
 
 ### Or skip the prompts by running:
+```
+# npm
+npm create vite@latest my-react-app -- --template react
 
-`# npm`
-`npm create vite@latest my-react-app -- --template react`
+# yarn
+yarn create vite my-react-app --template react
 
-`# yarn`
-`yarn create vite my-react-app --template react`
-
-`# pnpm`
-`pnpm create vite my-react-app --template react`
+# pnpm
+pnpm create vite my-react-app --template react
+```
 
 Once complete, you’ll:
-`cd my-react-app`
-`npm install`
-`npm run dev`
+```
+cd my-react-app
+npm install
+npm run dev
+```
 
 ## Create a proper .gitignore
 
@@ -105,19 +110,40 @@ yarn-error.log*
 .vscode/
 .idea/
 .DS_Store
+```
 
 
 3. Remove files that should have been ignored
-   `git rm -r --cached .`
-   `git add .`
-   `git commit -m "Clean up repo and add .gitignore"`
-   `git push -f origin main`
+   ```
+   git rm -r --cached .
+   git add .
+   git commit -m "Clean up repo and add .gitignore"
+   git push -f origin main
+   ```
 
 After this, your Source Control in VS Code should show only your project files — no 10k other files.
 
 ## Project Structure
 
-<pre> ```plaintext 📁 my-react-app ├── 📁 public │ └── vite.svg ├── 📁 src │ ├── App.css │ ├── App.jsx │ ├── 📁 assets │ │ └── react.svg │ ├── index.css │ └── main.jsx ├── .gitignore ├── eslint.config.js ├── index.html ├── package-lock.json ├── package.json ├── README.md └── vite.config.js ``` </pre>
+```plaintext
+📁 my-react-app
+├── 📁 public
+│   └── vite.svg
+├── 📁 src
+│   ├── App.css
+│   ├── App.jsx
+│   ├── 📁 assets
+│   │   └── react.svg
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+└── vite.config.js
+```
 
 ## Key Directories
 
