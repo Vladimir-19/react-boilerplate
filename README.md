@@ -109,4 +109,6 @@ Once complete, you’ll:
 
 # Making Your First Edit
 
-Open src/App.jsx and replace its contents with:
+Open src/App.jsx and add something new!
+
+### Happy Coding! 💻
